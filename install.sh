@@ -11,8 +11,11 @@ installpackage()
 
 overridedotfiles()
 {
-	rm -f ~/.bashrc
-	cp .bashrc ~/
+	cp -f .bashrc ~/
+	cp -f .bashrc ~/.config
+
+	cp -f .gitconfig ~/
+	cp -f .gitconfig ~/.config
 }
 
 mkdir -p ~/bin
