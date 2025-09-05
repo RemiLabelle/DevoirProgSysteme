@@ -1,6 +1,6 @@
 #!/bin/bash
 
-installPackage()
+installpackage()
 {
 	local pac=$1
 	$pac --version &> /dev/null
@@ -9,7 +9,7 @@ installPackage()
 	fi
 }
 
-overrideDotfiles()
+overridedotfiles()
 {
 	rm -f ~/.bashrc
 	cp .bashrc ~/
@@ -19,11 +19,11 @@ mkdir -p ~/bin
 mkdir -p ~/cegep
 mkdir -p ~/projets
 
-installPackage "git"
-installPackage "vim"
-installPackage "gcc"
-installPackage "gdb"
-installPackage "python3"
-installPackage "python-pip"
+installpackage "git"
+installpackage "vim"
+installpackage "gcc"
+installpackage "gdb"
+installpackage "python3"
+installpackage "python-pip"
 
-overrideDotfiles
+overridedotfiles
