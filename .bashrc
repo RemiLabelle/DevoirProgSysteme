@@ -42,6 +42,8 @@ echo "Bienvenue, $USER"
 
 ls
 
+export PATH=$PATH:~/bin
+
 if [[ "$LOGNAME" -ne "$USER" ]]
 then
 	PS1='[\u@\h \W]\$ '
